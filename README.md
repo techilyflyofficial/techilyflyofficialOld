@@ -2,7 +2,7 @@
 
 # Techily Fly - Website Development Agency
   
-  [![Twitter Follow](https://img.shields.io/twitter/follow/techilyflyofficial?style=social)](https://twitter.com/intent/follow?screen_name=TechilyFly)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/TechilyFly?style=social)](https://twitter.com/intent/follow?screen_name=TechilyFly)
   [![YouTube Video Views](https://img.shields.io/youtube/views/SjhiZ_ySGzA?style=social)](https://www.youtube.com/watch?v=S7x6kmiDXZ8)
 
 
