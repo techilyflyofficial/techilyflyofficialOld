@@ -199,6 +199,19 @@ body {
   text-align: center;
 }
 
+.h2-left {
+  text-align: left;
+}
+
+.section-sub-title {
+  color: var(--st-patricks-blue);
+  font-size: var(--fs-8);
+  margin-block-end: 60px;
+  max-width: max-content;
+  margin-inline: auto;
+  text-align: center;
+}
+
 .underline { position: relative; }
 
 .underline::before {
@@ -428,7 +441,13 @@ body {
 .stats-text { font-size: var(--fs-8); }
 
 
+/*-----------------------------------*\
+  #WHY CHOOSE
+\*-----------------------------------*/
 
+.why-us-icon img{
+  width: 50px;
+}
 
 
 /*-----------------------------------*\
@@ -446,11 +465,23 @@ body {
   border-radius: var(--radius-12);
 }
 
+/* .service-card .card-icon {
+  background-image: url("../images/service-banner-pattern.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsla(336, 5%, 18%, 0.12);
+  aspect-ratio: 1 / 1;
+  max-width: 165px;
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+  transition: var(--transition-1);
+} */
+
 .service-card .card-icon {
   background-image: url("../images/service-banner-pattern.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: hsla(335, 87%, 53%, 0.12);
   aspect-ratio: 1 / 1;
   max-width: 165px;
   display: grid;
@@ -459,7 +490,11 @@ body {
   transition: var(--transition-1);
 }
 
-.service-card:hover .card-icon { background-color: var(--winter-sky); }
+.service-card .card-icon img {
+  width: 75px;
+}
+
+.service-card:hover .card-icon { background-color: rgb(78, 69, 69); }
 
 .service-card .card-icon ion-icon {
   font-size: 5rem;
@@ -493,9 +528,6 @@ body {
   color: var(--white);
   background-color: var(--winter-sky);
 }
-
-
-
 
 
 /*-----------------------------------*\
