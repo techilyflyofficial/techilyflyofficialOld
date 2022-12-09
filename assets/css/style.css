@@ -185,8 +185,34 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
+.text-center {
+  text-align: center;
+}
+
+.abdurrahman-g-center-image {
+  margin: 25px auto;
+  width: 300px;
+}
+
+.display-flex {
+  display: flex;
+  gap: 25px;
+}
+
 .container {
   padding-inline: 15px;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px auto;
+}
+
+.center iframe{
+  display: block;
+  margin: 50px auto;
 }
 
 .h2,
@@ -291,10 +317,51 @@ body {
   object-fit: cover;
 }
 
+/* Social Image */
+.social-image {
+  width: 25%;
+}
+
 /* Portfolio Image */
 .portfolioImage {
   width: 300px;
   margin: 0 auto;
+}
+
+/* FAQs */
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
 }
 
 
@@ -605,6 +672,25 @@ body {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+.about-card-container {
+  margin: 25px 0;
+  gap: 5%;
+}
+.about-card {
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-12);
+}
+
+.about-card-icon img {
+  margin: 25px 0;
+  width: 150px;
+}
+
+.about-card .text {
+  margin-block-end: 20px;
+}
 
 .about-banner {
   margin-block-end: 30px;
@@ -911,6 +997,17 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+.social-list-contact {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.social-list-contact img{
+margin: 10px auto;
+}
+
 
 .footer-top .social-link {
   background-color: var(--white);
